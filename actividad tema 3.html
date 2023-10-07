@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    let frutas = ["Piña","Limón","Sandia"]
+    document.write("Arreglo original: " + frutas + "<br>");
+    document.write("frutas.length: " + frutas.length + "<br>");
+    document.write("frutas[2]: " + frutas[2] + "<br>");
+    document.write("frutas.push(Durazno)" + "<br>")
+    frutas.push("Durazno")
+    document.write("Arreglo: " + frutas + "<br>");
+    document.write("frutas.length: " + frutas.length + "<br>");
+    document.write("frutas.pop" + "<br>");
+    frutas.pop();
+    document.write("Arreglo: " + frutas + "<br>");
+document.write("frutas.length: " + frutas.length + "<br>");
+document.write("frutas.push(Kiwi,Ciruela)" + "<br>");
+frutas.push("Kiwi","Ciruela");
+document.write("Arreglo: " + frutas + "<br>");
+document.write("frutas.length: " + frutas.length + "<br>");
+frutas.forEach(function (elemento, indice, array) {
+  document.write(elemento, indice + "<br>");
+});
+document.write("frutas.push(Naranja,Papaya,Uva verde,Uva globo,Mango,Guayaba,Manzana,Melon,Plátano,Coco)" + "<br>");
+frutas.push("Naranja","Papaya","Uva verde","Uva globo","Mango","Guayaba","Manzana","Melon","Plátano","Coco");
+document.write("Arreglo: " + frutas + "<br>");
+document.write("frutas.length: " + frutas.length + "<br>");
+frutas.forEach(function (elemento, indice, array) {
+  document.write(elemento, indice + "<br>");
+});
+    </script>
+</body>
+</html>
